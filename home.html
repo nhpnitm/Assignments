@@ -1,0 +1,30 @@
+<!-Take a number input (less than 100) from the user and save it to the web storage. Create a web worker
+to increment the number till it becomes prime. Provide two buttons of ‘Start’ and ‘End’ to start or end
+the process. Upon pressing ‘end’, the increment stops, or the number becomes prime – whichever
+occurs first.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+   <title>Web Worker Hands-on</title>
+</head>
+<body>
+     <div>
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number">
+        <br>
+        <button  id = "save_to_web_storage" onclick="saveWebStorage()">Save to web storage</button>
+		<button id="clear" onclick="clear_data()">Clear the input number</button>
+     </div>
+     <div>
+        <h3 id="output"></h3>
+        <p id="info"></p>
+     </div>
+     <div> 
+        <p>Click on<strong>Start</strong>to start Web Worker process.Click on<strong>Stop</strong>to stop Web Worker process.</p>
+        <button id="start" onclick="start()">Start</button>
+        <button id="stop"  onclick="stop()">Stop</button>
+     </div> 
+	 <script src="script.js"></script>
+</body>
+</html>

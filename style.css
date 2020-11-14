@@ -1,0 +1,22 @@
+	*{
+		margin: 10px;
+	}
+	body{
+		text-align: center;
+		
+    }
+	
+	#number{
+		width: 200px;
+		padding: 10px;
+	}
+	
+	#save_to_web_storage #clear #start #stop {
+		padding: 10px; 
+		cursor: pointer;	 
+	}
+	
+	#output {
+		color: blue;
+		font-size: 5em;	
+	}
